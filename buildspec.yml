@@ -13,7 +13,6 @@ phases:
     build:
       commands:
         - echo Running unit tests with pytest...
-        - mkdir -p reports
         - pytest --junitxml=reports/results.xml --tb=short
     post_build:
       commands:
