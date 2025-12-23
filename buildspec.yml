@@ -13,7 +13,8 @@ phases:
     build:
       commands:
         - echo Running unit tests with pytest...
-        - pytest --junitxml=reports/resuts.xml --tb=short
+        - mkdir -p reports
+        - pytest --junitxml=reports/results.xml --tb=short
     post_build:
       commands:
         - echo Build completed successfully
@@ -24,5 +25,5 @@ artifacts:
 reports:
   pytest_reports:
     files:
-      - "reports/resuts.xml"
+      - "reports/results.xml"
     discard-paths: yes
