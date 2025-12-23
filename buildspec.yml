@@ -25,7 +25,7 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: reports  # Changez ceci à "reports" si vous voulez seulement le dossier reports
+  base-directory: .
 
 reports:
   pytest_reports:
